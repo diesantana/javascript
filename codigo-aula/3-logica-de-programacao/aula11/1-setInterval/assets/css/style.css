@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+/*----  Fonte Customizada */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+
+/*------- Formatações gerais */
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+body{
+    background: var(--primary-color);
+    font-family: 'Open sans', sans-serif;
+    font-size: 20px;
+}
+
+/*-------- Cores */
+:root{
+    --primary-color: rgb(135, 190, 226);
+    --primary-color-dark: rgba(100, 164, 207, 0.253);
+}
+
+/*---------- Conteúdo */
+
+.container{
+    background-color: aliceblue;
+    width: 50vw;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.container form{
+    padding: 20px;
+}
+
+.container label, .form-btn{
+    cursor: pointer;
+}
+
+.container form input, .form-btn{
+    display: block;
+    width: 100%;
+    height: 40px;
+    font-size: 1em;
+    margin-bottom: 15px;
+}
+
+.container form input{
+    padding: 5px;
+}
+
+.container form input:focus{
+    outline: 1px solid var(--primary-color);
+}
+
+.form-btn{
+    margin-left: 6px;
+    border-radius: 4px;
+    border: none;
+    background-color: cadetblue;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    
+}
+
+.form-btn:hover{
+    background-color: var(--primary-color);
+}

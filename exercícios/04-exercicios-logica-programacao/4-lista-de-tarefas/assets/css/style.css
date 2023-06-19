@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+/*----  Fonte Customizada */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+
+/*------- Formatações gerais */
+a{
+    text-decoration: none;
+}
+
+
+body{
+    background: var(--secondary-color);
+    font-family: 'Open sans', sans-serif;
+    font-size: 20px;
+}
+
+/*-------- Cores */
+:root{
+    --primary-color: rgb(135, 190, 226);
+    --primary-color-dark: rgba(100, 164, 207, 0.253);
+    --secondary-color: rgb(66, 101, 123);
+}
+
+/*---------- Conteúdo */
+
+.container{
+    background-color: aliceblue;
+    width: 50vw;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+
+.container input{
+    height: 20px;
+    font-size: 0.8em;
+    padding: 5px 10px;
+    border-radius: 4px;
+    border: 1px solid #2e2d2d;
+    width: 60%;
+}   
+
+
+.container input:focus{
+    outline: 1px solid var(--primary-color);
+    
+}
+
+.container div{
+    display: flex;
+    align-items: center;
+    padding: 15px 0 15px 0;
+}
+div .btn-add-tarefas{
+    height: 30px;
+    border-radius: 4px;
+    border: 1px solid cadetblue;
+    background-color: rgb(32, 124, 127);
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    padding: 6px 15px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.btn-add-tarefas:hover{
+    background-color: cadetblue;
+}
+
+.btn-add-tarefas:active{
+    background-color: rgb(31, 84, 85);
+}
+
+.list-tarefas{
+    padding-left: 15px;
+    width: 100%;
+}
+
+.list-tarefas li{
+    margin-bottom: 7px;
+}
+
+.btn-del{
+    border-radius: 4px;
+    border: 1px solid red;
+    background-color: red;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    padding: 3px 3px;
+    margin-left: 7px;
+    cursor: pointer;
+}
+
+.btn-del:active{
+    background-color: rgb(173, 137, 137);
+    border: 1px solid rgb(173, 137, 137);
+}
+
+.container{
+    word-wrap: break-word;
+}
+
+/*--------------  Media queries*/
+
+
+/* Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+    .container{
+        width: 70vw;
+    }
+
+    .container div{
+        display: block;
+    }
+
+    .container input{
+        width: 80%;
+        margin-bottom: 5px;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .container{
+        width: 65vw;
+    }
+
+    .container input{
+        width: 50%;
+    }
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .container{
+        width: 60vw;
+    }
+}
+
