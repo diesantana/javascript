@@ -5,11 +5,10 @@
 function divideNumbers(a, b) {
     if (b === 0) {
         return Promise.reject(`Não é possível dividir por ${b}`)
-            .catch(error => console.log(error));
     } else {
         return Promise.resolve(a / b)
-            .then((result) => console.log(result.toFixed(2)));
+            .then((result) => console.log(result));
     }
 }
 
-divideNumbers(100, 3);
+divideNumbers(100, 10);
