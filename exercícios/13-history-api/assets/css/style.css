@@ -1,0 +1,14 @@
+p{
+    font-size: 1.5rem;
+}
+
+a{
+    font-size: 1.2rem;
+}
+
+
+.content{
+    background-color: rgb(253, 212, 162);
+    height: 400px;
+    padding: 1rem;
+}

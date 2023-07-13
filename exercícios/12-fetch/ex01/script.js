@@ -5,12 +5,12 @@
 async function request(cep) {
     const cepTarget = await fetch(`https://viacep.com.br/ws/${cep}/json/`);
     const resposta = await cepTarget.json();
-    getCep(resposta);
+    getCep(resposta.logradouro);
 }
 
 function getCep(cepJson){
     const elementoHTML = document.querySelector('.resposta');
-    elementoHTML.innerHTML = cepJson.logradouro;
+    elementoHTML.innerHTML = cepJson;
 }
 
 document.addEventListener('submit', evento => {
